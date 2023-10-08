@@ -1,0 +1,19 @@
+SELECT language
+FROM films;
+#Selects column from the films table
+
+SELECT DISTINCT language
+FROM films;
+#Selects the number of unique languages in the table
+
+SELECT COUNT(*)
+FROM films;
+#Counts the total number of rows in the database
+
+SELECT COUNT(DISTINCT language)
+FROM films;
+#Counts the number of distinct languags in the films database
+
+SELECT title, language
+FROM films;
+#Selects mulitple columns in the films database.
