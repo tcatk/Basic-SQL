@@ -1,0 +1,25 @@
+SELECT name, deathdate
+FROM people
+WHERE deathdate IS NULL
+# Use 'WHERE IS', not '= NULL'
+
+SELECT COUNT(*)
+FROM films
+WHERE language IS NULL
+# Counts the number of columns where the language is not filled out.
+
+SELECT name
+FROM people
+WHERE name LIKE 'B%';
+#Selects people with last names beginning with "B".
+
+SELECT name
+FROM people
+WHERE name LIKE '_r%';
+#Selects people with "r" as the 2nd letter in their name.
+
+SELECT name
+FROM people
+WHERE name NOT LIKE 'A%';
+#Selects people whose last name does not begin with 'A'.
+
