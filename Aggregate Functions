@@ -1,0 +1,21 @@
+#SUM of a specific column
+SELECT SUM(gross)
+FROM films;
+
+#Average of all values in a specific column
+SELECT AVG(gross)
+FROM films;
+
+#Minimum entry in a column
+SELECT MIN(gross)
+FROM films;
+
+#Maximum entry in a column
+SELECT MAX(gross)
+FROM films;
+
+# SUM of films released in the year 2000 or later
+SELECT SUM(gross)
+FROM films;
+WHERE release_year >= 2000
+
