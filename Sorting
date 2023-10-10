@@ -13,4 +13,24 @@ SELECT birthdate, name
 FROM people
 ORDER BY birthdate ASC;
 
-Get title of films released in 2000 or 2012, in the order they were released.
+#Get all details of all films except ones from 2015, ordered by duration:
+SELECT *
+FROM films
+WHERE release_year <> '2015'
+ORDER BY duration; 
+
+#Get title & gross earnings for movies beginning with "M", ordered alphabetically
+SELECT title, gross
+FROM films
+WHERE title LIKE 'M%'
+ORDER BY title ASC;
+
+#Get the IMDB score and film ID for every film from the reviews table, sorted from highest to lowest score.
+SELECT imdb_score, film_id
+FROM reviews
+ORDER BY imdb_score DESC;
+
+#Get certifications, release years, and titles of films ordered by certification (alphabetically) and release year.
+SELECT certification, release_year, title
+FROM films
+ORDER BY certification ASC, release_year;
