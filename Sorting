@@ -1,0 +1,16 @@
+#Select a column and sort it alphabetically:
+SELECT name
+FROM people
+ORDER By name ASC;
+
+#Select 2 columns, ordered by 1 specific column:
+SELECT name, birthdate
+FROM people
+ORDER BY birthdate;
+
+#Select 2 columns, ordered chronologically:
+SELECT birthdate, name
+FROM people
+ORDER BY birthdate ASC;
+
+Get title of films released in 2000 or 2012, in the order they were released.
