@@ -1,0 +1,24 @@
+# Alias net_profit from gross & budget data.
+SELECT  title, (gross - budget) AS net_profit
+from films;
+
+#Title and duration of films (duration is in minutes, so dividing by 60 is necessary)
+SELECT title, (duration / 60.0) AS duration_hours
+FROM films
+
+#Average duration hours of all films:
+SELECT AVG(duration) / 60.0 AS avg_duration_hours
+FROM films;
+
+#get percentage of people no longer alive from a database that lists deathdates.
+SELECT COUNT(deathdate) * 100.0 / COUNT(*) AS percentage_dead
+FROM people;
+
+#Number of years between oldest and newest film
+SELECT MAX(release_year) - MIN(release_year) AS difference
+FROM films;
+
+#Number of decades the films database covers:
+SELECT (MAX(release_year) - MIN(release_year)) / 10.0
+AS number_of_decades
+FROM films;
